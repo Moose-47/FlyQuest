@@ -1,0 +1,1274 @@
+fileFormatVersion: 2
+guid: d908b3e0ebf3a4a4fbaa95590afd0a50
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3042238354697484005
+    second: ToxicFrogGreenBlue_Sheet_0
+  - first:
+      213: 8793898569355060396
+    second: ToxicFrogGreenBlue_Sheet_1
+  - first:
+      213: 1886706302834575494
+    second: ToxicFrogGreenBlue_Sheet_2
+  - first:
+      213: -2443963372690360674
+    second: ToxicFrogGreenBlue_Sheet_3
+  - first:
+      213: 8313492172622377154
+    second: ToxicFrogGreenBlue_Sheet_4
+  - first:
+      213: -4819898398816990411
+    second: ToxicFrogGreenBlue_Sheet_5
+  - first:
+      213: 1342413817800276057
+    second: ToxicFrogGreenBlue_Sheet_6
+  - first:
+      213: 4197964074333777434
+    second: ToxicFrogGreenBlue_Sheet_7
+  - first:
+      213: -2471387603395987559
+    second: ToxicFrogGreenBlue_Sheet_8
+  - first:
+      213: 5097209337669556899
+    second: ToxicFrogGreenBlue_Sheet_9
+  - first:
+      213: -2288631773180960703
+    second: ToxicFrogGreenBlue_Sheet_10
+  - first:
+      213: -7879501088773831271
+    second: ToxicFrogGreenBlue_Sheet_11
+  - first:
+      213: -2412917036224171270
+    second: ToxicFrogGreenBlue_Sheet_12
+  - first:
+      213: -3422500437387938415
+    second: ToxicFrogGreenBlue_Sheet_13
+  - first:
+      213: -8237376818462165192
+    second: ToxicFrogGreenBlue_Sheet_14
+  - first:
+      213: 7437120194375217755
+    second: ToxicFrogGreenBlue_Sheet_15
+  - first:
+      213: 8669397949820898219
+    second: ToxicFrogGreenBlue_Sheet_16
+  - first:
+      213: 8435353976749975098
+    second: ToxicFrogGreenBlue_Sheet_17
+  - first:
+      213: 653451073470905598
+    second: ToxicFrogGreenBlue_Sheet_18
+  - first:
+      213: 6973940000693264400
+    second: ToxicFrogGreenBlue_Sheet_19
+  - first:
+      213: -7645795742986027730
+    second: ToxicFrogGreenBlue_Sheet_20
+  - first:
+      213: 5495412787310323570
+    second: ToxicFrogGreenBlue_Sheet_21
+  - first:
+      213: 8401484700233536657
+    second: ToxicFrogGreenBlue_Sheet_22
+  - first:
+      213: -8249268594143982750
+    second: ToxicFrogGreenBlue_Sheet_23
+  - first:
+      213: -4233860477644400534
+    second: ToxicFrogGreenBlue_Sheet_24
+  - first:
+      213: -4466007659653141215
+    second: ToxicFrogGreenBlue_Sheet_25
+  - first:
+      213: 6324375006319185875
+    second: ToxicFrogGreenBlue_Sheet_26
+  - first:
+      213: 7160497880634698515
+    second: ToxicFrogGreenBlue_Sheet_27
+  - first:
+      213: 6380778426268291319
+    second: ToxicFrogGreenBlue_Sheet_28
+  - first:
+      213: -8137999603813306645
+    second: ToxicFrogGreenBlue_Sheet_29
+  - first:
+      213: 2210772984485668451
+    second: ToxicFrogGreenBlue_Sheet_30
+  - first:
+      213: 4918359275941803280
+    second: ToxicFrogGreenBlue_Sheet_31
+  - first:
+      213: 6510035044728157650
+    second: ToxicFrogGreenBlue_Sheet_32
+  - first:
+      213: -5938112609404948744
+    second: ToxicFrogGreenBlue_Sheet_33
+  - first:
+      213: -4900393952976293335
+    second: ToxicFrogGreenBlue_Sheet_34
+  - first:
+      213: 1649719720457081001
+    second: ToxicFrogGreenBlue_Sheet_35
+  - first:
+      213: -2139481217705516664
+    second: ToxicFrogGreenBlue_Sheet_36
+  - first:
+      213: -5027705535161930899
+    second: ToxicFrogGreenBlue_Sheet_37
+  - first:
+      213: 1915118165397923404
+    second: ToxicFrogGreenBlue_Sheet_38
+  - first:
+      213: 5803236285094137438
+    second: ToxicFrogGreenBlue_Sheet_39
+  - first:
+      213: -1829328966745119666
+    second: ToxicFrogGreenBlue_Sheet_40
+  - first:
+      213: 7042113253747419919
+    second: ToxicFrogGreenBlue_Sheet_41
+  - first:
+      213: -9166012468178774301
+    second: ToxicFrogGreenBlue_Sheet_42
+  - first:
+      213: -29547008067536656
+    second: ToxicFrogGreenBlue_Sheet_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 22
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 207
+        width: 21
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6554fe4614479784ca8b175e6fcf5076
+      internalID: 1283522245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 207
+        width: 21
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12dc8932450217041b36a8eb9d5e7fd1
+      internalID: -243296547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 207
+        width: 21
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff55f104f7e23ac42b203ecdc5d54f25
+      internalID: 859885578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 207
+        width: 22
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16de1469eeb03854aa70250b2b43d237
+      internalID: -1588644325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 207
+        width: 21
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab04d71d2fabf64ebf93b04eedc5f56
+      internalID: 480088468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 207
+        width: 21
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94c6f1c3fb75554b9e4f9a9dc092bdf
+      internalID: 149873590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 207
+        width: 21
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd900d39c785aff4dab19ab976d48ce0
+      internalID: -1478100027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 207
+        width: 21
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7dbddb3b4dd984d846fd0897c68a00
+      internalID: 1591295045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 159
+        width: 21
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4cd4a2edf549b418fbf6af2914506c
+      internalID: -1995534310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 159
+        width: 21
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a44ae052a58416428a26406780a3058
+      internalID: -170180826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 159
+        width: 22
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8478d2c9238dbd54684cfac8014eb22e
+      internalID: 294783572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 160
+        width: 21
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c15612abdb26344b0c05b348588377
+      internalID: 473720381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 163
+        width: 22
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5812c47de78c35458027bd5e1430909
+      internalID: 1220795104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 161
+        width: 23
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99818057056afb94281235a1a976fc16
+      internalID: -1288557331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 159
+        width: 21
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa976a0b5fe06c4a8e0ddbd0180f92f
+      internalID: 2111883441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 111
+        width: 21
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd9a61ed5ada5b41bd4b0e5963db68c
+      internalID: 1433540417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 111
+        width: 21
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4fb92ef7b5cf9a45bfb8a6fd8065028
+      internalID: -550433702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 111
+        width: 22
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8653d08bce624e419d950b6a849c9dc
+      internalID: -1167689371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 111
+        width: 34
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99d2665a931f294aa5208be4afdae35
+      internalID: -1311524162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 111
+        width: 36
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fcea6230038ced46a1f7cb230fbaf3f
+      internalID: 1869819525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 111
+        width: 37
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8c5957d5872ad4fa5ab959ad64b9b2
+      internalID: -1933186089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 63
+        width: 21
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e264c5f9fb36b4c8d33275501effb1
+      internalID: -1489252221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 63
+        width: 21
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a98c454c40ebe4459a7b69b3f5be171
+      internalID: 1744667359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 63
+        width: 23
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8987060255b9e846a03e6af6f6786d5
+      internalID: 385334963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 63
+        width: 21
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416be536e62917c42bdfb749ba17fbf0
+      internalID: 395486523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 15
+        width: 21
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3612fee800f57084db77e35a8d9f332d
+      internalID: -2131023754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 15
+        width: 23
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92917e262f6e2949b14efb6dd7a0497
+      internalID: 1490614709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 15
+        width: 24
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb69135dd0a8b040b3c1e6184bb15c6
+      internalID: 873824127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 16
+        width: 25
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c62a8dffc01de2409038f8048ec8d5d
+      internalID: 1496431548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 29
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a8ca85dc6518646a43d055903df803
+      internalID: -1538471394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 25
+        width: 9
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ef5385ee872f349b7ff08bf2f5679f
+      internalID: -1879728946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 17
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3298bca1d78aeb4449ae8e3461f3a8b6
+      internalID: 906215224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 17
+        width: 19
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1928848ef1817f4d88b3512f7e27326
+      internalID: -1723711676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 18
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4533d485fa70943ad2edce1304061a
+      internalID: -229996021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 27
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c48642c42cf52e46bfc9ed99b0984a7
+      internalID: 1497802532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 22
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0599a4f8735dbc4caa8d01269daf33a
+      internalID: 835861153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 27
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce109be078d3b4469ff40589052e92e
+      internalID: 451927327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 18
+        width: 8
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e2c108560c0624abbcbdc02c9fa0a4
+      internalID: -1827506791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 25
+        width: 9
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e429316978779ee42a006857a78b163e
+      internalID: 933629673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 19
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ec55b7ef1c5324eb106c31a950776f
+      internalID: -650285090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 20
+        width: 16
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0417015447651a847b7510d9589f7019
+      internalID: 583048178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 20
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2736d6446f3d84c86457883fb02fa4
+      internalID: 180932616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 20
+        width: 8
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21fd7d629c4ffc44191d5a62a450b3d3
+      internalID: 416175508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBlue_Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 23
+        width: 49
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44dab764def84684286828218d2255ac
+      internalID: -149678525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ee5ad5917b8eb0e449eee1a8cbf93c8c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ToxicFrogGreenBlue_Sheet_0: 1283522245
+      ToxicFrogGreenBlue_Sheet_1: -243296547
+      ToxicFrogGreenBlue_Sheet_10: 294783572
+      ToxicFrogGreenBlue_Sheet_11: 473720381
+      ToxicFrogGreenBlue_Sheet_12: 1220795104
+      ToxicFrogGreenBlue_Sheet_13: -1288557331
+      ToxicFrogGreenBlue_Sheet_14: 2111883441
+      ToxicFrogGreenBlue_Sheet_15: 1433540417
+      ToxicFrogGreenBlue_Sheet_16: -550433702
+      ToxicFrogGreenBlue_Sheet_17: -1167689371
+      ToxicFrogGreenBlue_Sheet_18: -1311524162
+      ToxicFrogGreenBlue_Sheet_19: 1869819525
+      ToxicFrogGreenBlue_Sheet_2: 859885578
+      ToxicFrogGreenBlue_Sheet_20: -1933186089
+      ToxicFrogGreenBlue_Sheet_21: -1489252221
+      ToxicFrogGreenBlue_Sheet_22: 1744667359
+      ToxicFrogGreenBlue_Sheet_23: 385334963
+      ToxicFrogGreenBlue_Sheet_24: 395486523
+      ToxicFrogGreenBlue_Sheet_25: -2131023754
+      ToxicFrogGreenBlue_Sheet_26: 1490614709
+      ToxicFrogGreenBlue_Sheet_27: 873824127
+      ToxicFrogGreenBlue_Sheet_28: 1496431548
+      ToxicFrogGreenBlue_Sheet_29: -1538471394
+      ToxicFrogGreenBlue_Sheet_3: -1588644325
+      ToxicFrogGreenBlue_Sheet_30: -1879728946
+      ToxicFrogGreenBlue_Sheet_31: 906215224
+      ToxicFrogGreenBlue_Sheet_32: -1723711676
+      ToxicFrogGreenBlue_Sheet_33: -229996021
+      ToxicFrogGreenBlue_Sheet_34: 1497802532
+      ToxicFrogGreenBlue_Sheet_35: 835861153
+      ToxicFrogGreenBlue_Sheet_36: 451927327
+      ToxicFrogGreenBlue_Sheet_37: -1827506791
+      ToxicFrogGreenBlue_Sheet_38: 933629673
+      ToxicFrogGreenBlue_Sheet_39: -650285090
+      ToxicFrogGreenBlue_Sheet_4: 480088468
+      ToxicFrogGreenBlue_Sheet_40: 583048178
+      ToxicFrogGreenBlue_Sheet_41: 180932616
+      ToxicFrogGreenBlue_Sheet_42: 416175508
+      ToxicFrogGreenBlue_Sheet_43: -149678525
+      ToxicFrogGreenBlue_Sheet_5: 149873590
+      ToxicFrogGreenBlue_Sheet_6: -1478100027
+      ToxicFrogGreenBlue_Sheet_7: 1591295045
+      ToxicFrogGreenBlue_Sheet_8: -1995534310
+      ToxicFrogGreenBlue_Sheet_9: -170180826
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
