@@ -1086,7 +1086,7 @@ GameObject:
   - component: {fileID: 822744270}
   - component: {fileID: 822744269}
   - component: {fileID: 822744271}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -7758,7 +7758,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059283204}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: b754fef2beb31ad4cac0e5d2598be084, type: 2}
   m_CullingMode: 0
@@ -7857,6 +7857,9 @@ MonoBehaviour:
   speed: 5
   jumpForce: 10.3
   fallSpeed: 1
+  isGroundLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!61 &2059283211
 BoxCollider2D:
   m_ObjectHideFlags: 0

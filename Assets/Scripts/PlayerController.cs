@@ -2,7 +2,7 @@ using UnityEngine;
 
 //Creates rigidbody2d attached to whatever this script is attached to and prevents removal of rigidbody2d from object.
 //ReuireComponent can only contain 3 in a single statement, additonal lines would be required for more.
-[RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer))]
+[RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer), typeof(Animator))]
 public class PlayerController : MonoBehaviour
 {
     /*public makes it available in unity to change from in engine and not just from script
@@ -13,10 +13,18 @@ public class PlayerController : MonoBehaviour
     [Range(1, 10)]
     public float fallSpeed = 1.0f;
 
-    bool grounded;
-
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private Animator anim;
+
+    //groundCheck variables
+    [Range(0.01f, 1.0f)]
+    private Vector2 groundCheckSize = new Vector2(0.8f, 0.04f);
+    public LayerMask isGroundLayer;
+
+    bool isGrounded = false;
+
+    private Transform groundCheck;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,58 +32,51 @@ public class PlayerController : MonoBehaviour
         //Assigning unity Rigidbody2D to var.
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+
         rb.linearVelocity = Vector3.zero;
-        
+
+        //groundCheck init
+        GameObject newGameObject = new GameObject();
+        newGameObject.transform.SetParent(transform); //sets the position to the parents position
+        newGameObject.transform.localPosition = Vector3.zero;
+        newGameObject.name = "GroundCheck";
+        groundCheck = newGameObject.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
+        checkGrounded();
         //Movement for left and right.
         float hInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(hInput * speed, rb.linearVelocity.y);
-
-        if (rb.linearVelocity.x > 0) {
-            sr.flipX = false; }
-        if (rb.linearVelocity.x < 0) {
-            sr.flipX = true; }
-
-        if (Input.GetButtonDown("Jump") && grounded)
+        if (rb.linearVelocity.x > 0) sr.flipX = false;       
+        if (rb.linearVelocity.x < 0) sr.flipX = true;
+        
+   //Jump
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
 
- //This makes the player fall faster over time so the jump feels less floaty
+        //This makes the player fall faster over time so the jump feels less floaty
         if (rb.linearVelocity.y < 0)
         {
             rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallSpeed - 1) * Time.deltaTime;
         }
-    }
-    // Called when the player's collider starts touching another collider
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Check if the player is touching the ground
-        if (collision.gameObject.CompareTag("ground"))
-        {
-            grounded = true;
-        }
-    }
 
-    // Called while the player's collider stays in contact with another collider
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("ground"))
-        {
-            grounded = true;
-        }
+        //animation tags
+        anim.SetBool("isGrounded", isGrounded);
+        anim.SetFloat("speed", Mathf.Abs(hInput));
+        anim.SetBool("isFalling", rb.linearVelocity.y < -0.1f);
     }
-
-    // Called when the player's collider stops touching another collider
-    private void OnCollisionExit2D(Collision2D collision)
+    void checkGrounded()
     {
-        if (collision.gameObject.CompareTag("ground"))
+        if (!isGrounded)
         {
-            grounded = false;
+            if (rb.linearVelocity.y <= 0) isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0, isGroundLayer);
         }
+        else isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0, isGroundLayer);
     }
 }
