@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!isGrounded)
         {
-            if (rb.linearVelocity.y <= 0) isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0, isGroundLayer);
+            if (rb.linearVelocity.y <= 0.1f) isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0, isGroundLayer);
         }
         else isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0, isGroundLayer);
     }
@@ -105,7 +105,5 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("isGrounded", isGrounded);
         anim.SetFloat("speed", Mathf.Abs(hInput));
         anim.SetBool("isFalling", rb.linearVelocity.y < -0.1f);
-    }
-    
-    
+    }   
 }

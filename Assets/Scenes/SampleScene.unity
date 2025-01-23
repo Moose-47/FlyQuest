@@ -1087,6 +1087,7 @@ GameObject:
   - component: {fileID: 822744269}
   - component: {fileID: 822744271}
   - component: {fileID: 822744273}
+  - component: {fileID: 822744272}
   m_Layer: 3
   m_Name: Ground
   m_TagString: ground
@@ -3931,6 +3932,83 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!66 &822744272
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822744267}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 822744271}
+    m_ColliderPaths:
+    - - X: -47797616
+        Y: 24345238
+      - X: -44940476
+        Y: 27678570
+      - X: -44940476
+        Y: 30059524
+      - X: -67559520
+        Y: 30059524
+      - X: -67559520
+        Y: 23869048
+      - X: -49702384
+        Y: 23869048
+    - - X: 1875059456
+        Y: 59523
+      - X: -90059528
+        Y: 59523
+      - X: -90059528
+        Y: -7559523
+      - X: 1875059456
+        Y: -7559523
+  m_CompositePaths:
+    m_Paths:
+    - - {x: -4.970241, y: 2.3869047}
+      - {x: -4.7797565, y: 2.43453}
+      - {x: -4.4940476, y: 2.7678664}
+      - {x: -4.4940767, y: 3.0059524}
+      - {x: -6.755952, y: 3.0059233}
+      - {x: -6.7559223, y: 2.3869047}
+    - - {x: 187.50592, y: -0.7559523}
+      - {x: 187.50592, y: 0.0059523}
+      - {x: -9.005953, y: 0.005923}
+      - {x: -9.005923, y: -0.7559523}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+  m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 822744267}
 --- !u!50 &822744273
 Rigidbody2D:
   serializedVersion: 5
@@ -5274,7 +5352,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpForce: 13
-  fallSpeed: 1
   maxJumpTime: 0.35
   isGroundLayer:
     serializedVersion: 2
