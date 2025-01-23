@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 10.3f;
     [Range(1, 10)]
     public float fallSpeed = 1.0f;
+    public float maxJumpTime = 0.35f; //setting the maximum amount of time jump can be held to get the highest jump height
+
+    private float hInput; //this is here as a global so my animations function can utilize it
 
     private Rigidbody2D rb;
     private SpriteRenderer sr;
@@ -23,9 +26,11 @@ public class PlayerController : MonoBehaviour
     public LayerMask isGroundLayer;
 
     bool isGrounded = false;
+    bool isJumping = false;
+    private float jumpTimer = 0f;
 
     private Transform groundCheck;
-
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,7 +38,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-
+        
         rb.linearVelocity = Vector3.zero;
 
         //groundCheck init
@@ -48,28 +53,44 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         checkGrounded();
-        //Movement for left and right.
-        float hInput = Input.GetAxis("Horizontal");
+        LRmovement();
+        jump();
+        animations();      
+    }
+    void LRmovement()
+    {
+        hInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(hInput * speed, rb.linearVelocity.y);
-        if (rb.linearVelocity.x > 0) sr.flipX = false;       
+        if (rb.linearVelocity.x > 0) sr.flipX = false;
         if (rb.linearVelocity.x < 0) sr.flipX = true;
-        
-   //Jump
+    }
+    void jump()
+    {
+        //Variable jump based on length of time button is held
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            isJumping = true;
+            jumpTimer = maxJumpTime;
+            rb.gravityScale = 10;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
 
-        //This makes the player fall faster over time so the jump feels less floaty
-        if (rb.linearVelocity.y < 0)
+        if (Input.GetButton("Jump") && rb.linearVelocity.y > 0 && isJumping)
         {
-            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallSpeed - 1) * Time.deltaTime;
+            if (jumpTimer < maxJumpTime * 0.5f) rb.gravityScale = 25; //Gravity only increased further when button held down
+            if (jumpTimer > 0)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                jumpTimer -= Time.deltaTime;
+            }
+            else isJumping = false;
         }
 
-        //animation tags
-        anim.SetBool("isGrounded", isGrounded);
-        anim.SetFloat("speed", Mathf.Abs(hInput));
-        anim.SetBool("isFalling", rb.linearVelocity.y < -0.1f);
+        if (rb.linearVelocity.y <= 0)
+        {
+            isJumping = false;
+            rb.gravityScale = 3f;
+        }
     }
     void checkGrounded()
     {
@@ -79,4 +100,12 @@ public class PlayerController : MonoBehaviour
         }
         else isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0, isGroundLayer);
     }
+    void animations()
+    {
+        anim.SetBool("isGrounded", isGrounded);
+        anim.SetFloat("speed", Mathf.Abs(hInput));
+        anim.SetBool("isFalling", rb.linearVelocity.y < -0.1f);
+    }
+    
+    
 }
