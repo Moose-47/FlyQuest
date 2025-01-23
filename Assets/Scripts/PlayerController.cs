@@ -9,9 +9,9 @@ public class PlayerController : MonoBehaviour
       having [x] applies to the below var. In this case setting the range that the player speed can be.*/
     [Range(3, 10)]
     public float speed = 5.0f;
-    public float jumpForce = 10.3f;
-    [Range(1, 10)]
-    public float fallSpeed = 1.0f;
+    [Range(10, 20)]
+    public float jumpForce = 13f;
+    
     public float maxJumpTime = 0.35f; //setting the maximum amount of time jump can be held to get the highest jump height
 
     private float hInput; //this is here as a global so my animations function can utilize it
