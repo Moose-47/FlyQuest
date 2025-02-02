@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {   
-    public GameObject Player;   
+    public GameObject Player; 
     public float timeOffset;
     public Vector2 posOffset;
 

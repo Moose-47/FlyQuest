@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        
+
         rb.linearVelocity = Vector3.zero;
 
         //groundCheck init
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
         checkGrounded();
         LRmovement();
         jump();
-        animations();      
+        animations();
     }
     void LRmovement()
     {
