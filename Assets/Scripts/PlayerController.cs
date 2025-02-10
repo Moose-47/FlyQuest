@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 //Creates rigidbody2d attached to whatever this script is attached to and prevents removal of rigidbody2d from object.
@@ -30,7 +31,14 @@ public class PlayerController : MonoBehaviour
     private float jumpTimer = 0f;
 
     private Transform groundCheck;
-    
+
+    private int _score = 0;
+    public int score
+    {
+        get => _score;
+        set => _score = value;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -56,6 +64,7 @@ public class PlayerController : MonoBehaviour
         LRmovement();
         jump();
         animations();
+
     }
     void LRmovement()
     {
@@ -75,9 +84,9 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
 
-        if (Input.GetButton("Jump") && rb.linearVelocity.y > 0 && isJumping)
+        if (Input.GetButton("Jump") && rb.linearVelocity.y > 0 && isJumping && !isGrounded)
         {
-            if (jumpTimer < maxJumpTime * 0.5f) rb.gravityScale = 25; //Gravity only increased further when button held down
+            if (jumpTimer < maxJumpTime * 0.5f) rb.gravityScale = 23; //Gravity only increased further when button held down
             if (jumpTimer > 0)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -89,7 +98,7 @@ public class PlayerController : MonoBehaviour
         if (rb.linearVelocity.y <= 0)
         {
             isJumping = false;
-            rb.gravityScale = 3f;
+            rb.gravityScale = 2f;
         }
     }
     void checkGrounded()
@@ -105,5 +114,19 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("isGrounded", isGrounded);
         anim.SetFloat("speed", Mathf.Abs(hInput));
         anim.SetBool("isFalling", rb.linearVelocity.y < -0.1f);
-    }   
+    }
+
+  
+
+    //Detect Pickup
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Pickup pickup = collision.gameObject.GetComponent<Pickup>();
+        if (pickup != null) pickup.Pickup(this);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Pickup pickup = collision.GetComponent<Pickup>();
+        if (pickup != null) pickup.Pickup(this);
+    }
 }
