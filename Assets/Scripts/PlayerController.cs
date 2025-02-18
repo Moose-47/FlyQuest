@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 5.0f;
     [Range(10, 20)]
     public float jumpForce = 13f;
-    
+
     public float maxJumpTime = 0.35f; //setting the maximum amount of time jump can be held to get the highest jump height
 
     private float hInput; //this is here as a global so my animations function can utilize it
@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
     public float pullSpeed = 10f; // Speed of player movement toward grapple point
     private Vector2 grapplePoint;
     private bool isGrappling = false;
-    // Parameters for the dome shape and raycasting
+    // Parameters for raycasting
     public float grappleRadius = 5f; // The radius of the grapple area
     public int numRays = 10; // Number of rays to cast in the arc
     public float grappleAngle = 90f; // The maximum angle on each side (90 degrees = 180 degree dome)
@@ -83,19 +83,14 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         checkGrounded();
-        
+
         if (canMove())
         {
             LRmovement();
         }
         jump();
         animations();
-
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !isGrappling)
-        {
-            isGrappling = true;
-            CastGrappleRays();                     
-        }
+        grapple();
     }
     bool canMove()
     {
@@ -157,7 +152,14 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("isFalling", rb.linearVelocity.y < -0.1f);
         anim.SetBool("isGrappling", isGrappling);
     }
-
+    void grapple()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !isGrappling)
+        {
+            isGrappling = true;
+            CastGrappleRays();
+        }
+    }
     void CastGrappleRays()
     {
         bool grappleFound = false;
