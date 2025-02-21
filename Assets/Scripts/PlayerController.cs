@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Linq;
 using UnityEngine;
+using static Enemy;
 
 //Creates rigidbody2d attached to whatever this script is attached to and prevents removal of rigidbody2d from object.
 //ReuireComponent can only contain 3 in a single statement, additonal lines would be required for more.
@@ -26,7 +27,7 @@ public class PlayerController : MonoBehaviour
 
     //groundCheck variables
     [Range(0.01f, 1.0f)]
-    private Vector2 groundCheckSize = new Vector2(0.5f, 0.04f);
+    private Vector2 groundCheckSize = new (0.5f, 0.04f);
     public LayerMask isGroundLayer;
 
     bool isGrounded = false;
@@ -42,6 +43,20 @@ public class PlayerController : MonoBehaviour
         set => _score = value;
     }
 
+    private int maxHP = 4;
+    private int _hp = 0;
+    public int hp
+    {
+        get => _hp;
+        set
+        {
+            hp = value;
+            if(_hp > maxHP)
+            {
+                _hp = maxHP;
+            }
+        }
+    }
     // GRAPPLE VARIABLES
     public LayerMask grappleLayer; // Layer where grapple points exist
     public float grappleRange = 10f;
@@ -72,7 +87,7 @@ public class PlayerController : MonoBehaviour
         lastCheckpoint = transform.position;
 
         //groundCheck init
-        GameObject newGameObject = new GameObject();
+        GameObject newGameObject = new();
         newGameObject.transform.SetParent(transform); //sets the position to the parents position
         newGameObject.transform.localPosition = Vector3.zero;
         newGameObject.name = "GroundCheck";
@@ -280,5 +295,12 @@ public class PlayerController : MonoBehaviour
     {
         Pickup pickup = collision.GetComponent<Pickup>();
         if (pickup != null) pickup.Pickup(this);
+        if (collision.CompareTag("squish") && rb.linearVelocityY < 0)
+        {
+            collision.enabled = false;
+            collision.gameObject.GetComponentInParent<Enemy>().takeDamage(1, DamageType.Default);
+            rb.linearVelocity = Vector2.zero;
+            rb.AddForce(Vector2.up * 6, ForceMode2D.Impulse);
+        }
     }
 }

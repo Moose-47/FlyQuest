@@ -1,13 +1,14 @@
 using UnityEngine;
 
-public class Score : MonoBehaviour, Pickup
+public class Moth : MonoBehaviour, Pickup
 {
-    public float bobSpeed = 2f;
+    public float bobSpeed = 2f;  
     public float bobAmount = 0.2f;
 
-    public int addScore;
+    public int addHP = 1;
 
     private Vector2 startPos;
+
     private void Start()
     {
         startPos = transform.position;
@@ -20,7 +21,7 @@ public class Score : MonoBehaviour, Pickup
     }
     public void Pickup(PlayerController player)
     {
-        player.score += addScore;
+        player.hp += addHP;
         Destroy(gameObject);
     }
 }
