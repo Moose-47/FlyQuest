@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
         get => _hp;
         set
         {
-            hp = value;
+            _hp = value;
             if(_hp > maxHP)
             {
                 _hp = maxHP;

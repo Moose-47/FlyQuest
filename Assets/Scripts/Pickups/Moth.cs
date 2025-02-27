@@ -5,7 +5,7 @@ public class Moth : MonoBehaviour, Pickup
     public float bobSpeed = 2f;  
     public float bobAmount = 0.2f;
 
-    public int addHP = 1;
+    public int addHP;
 
     private Vector2 startPos;
 
