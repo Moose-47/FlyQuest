@@ -21,7 +21,8 @@ public class Moth : MonoBehaviour, Pickup
     }
     public void Pickup(PlayerController player)
     {
-        player.hp += addHP;
+        GameManager.Instance.hp++;
+        Debug.Log(GameManager.Instance.hp);
         Destroy(gameObject);
     }
 }

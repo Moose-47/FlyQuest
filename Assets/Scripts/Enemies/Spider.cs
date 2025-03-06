@@ -55,4 +55,12 @@ public class Spider : Enemy
     {
         base.takeDamage(DamageValue, damageType);
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {       
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            GameManager.Instance.hp--;
+            Debug.Log(GameManager.Instance.hp);
+        }
+    }
 }

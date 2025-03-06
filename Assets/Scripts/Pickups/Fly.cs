@@ -20,7 +20,7 @@ public class Score : MonoBehaviour, Pickup
     }
     public void Pickup(PlayerController player)
     {
-        player.score += addScore;
+        GameManager.Instance.score++;
         Destroy(gameObject);
     }
 }

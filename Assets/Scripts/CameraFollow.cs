@@ -3,23 +3,36 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {   
-    public GameObject Player; 
+    
     public float timeOffset;
     public Vector2 posOffset;
-
+    public Vector3 offset;
     public float leftLimit;
     public float rightLimit;
     public float bottomLimit;
     public float topLimit;
 
-    private Vector3 velocity;
 
+    private Transform playerTransform;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
     }
+    private void OnEnable()
+    {
+        GameManager.Instance.OnPlayerSpawned += OnPlayerSpawnedCallback;
+    }
+    private void OnDisable()
+    {
+        GameManager.Instance.OnPlayerSpawned -= OnPlayerSpawnedCallback;
+    }
+    private void OnPlayerSpawnedCallback(PlayerController controller)
+    {
+        playerTransform = controller.transform;
+        offset = transform.position - playerTransform.position;
 
+    }
     // Update is called once per frame
     void Update()
     {
@@ -27,7 +40,7 @@ public class CameraFollow : MonoBehaviour
         Vector3 startPos = transform.position;
 
       //Player current position
-        Vector3 endPos = Player.transform.position;
+        Vector3 endPos = playerTransform.transform.position;
 
         endPos.x += posOffset.x;
         endPos.y += posOffset.y;

@@ -36,27 +36,27 @@ public class PlayerController : MonoBehaviour
 
     private Transform groundCheck;
 
-    private int _score = 0;
-    public int score
-    {
-        get => _score;
-        set => _score = value;
-    }
+    //private int _score = 0;
+    //public int score
+    //{
+    //    get => _score;
+    //    set => _score = value;
+    //}
 
-    private int maxHP = 4;
-    private int _hp = 0;
-    public int hp
-    {
-        get => _hp;
-        set
-        {
-            _hp = value;
-            if(_hp > maxHP)
-            {
-                _hp = maxHP;
-            }
-        }
-    }
+    //private int maxHP = 4;
+    //private int _hp = 0;
+    //public int hp
+    //{
+    //    get => _hp;
+    //    set
+    //    {
+    //        _hp = value;
+    //        if (_hp > maxHP)
+    //        {
+    //            _hp = maxHP;
+    //        }
+    //    }
+    //}
     // GRAPPLE VARIABLES
     public LayerMask grappleLayer; // Layer where grapple points exist
     public float grappleRange = 10f;
