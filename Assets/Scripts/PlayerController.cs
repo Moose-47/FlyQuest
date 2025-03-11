@@ -6,7 +6,7 @@ using static Enemy;
 //Creates rigidbody2d attached to whatever this script is attached to and prevents removal of rigidbody2d from object.
 //ReuireComponent can only contain 3 in a single statement, additonal lines would be required for more.
 [RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer), typeof(Animator))]
-[RequireComponent(typeof(LineRenderer))]
+[RequireComponent(typeof(LineRenderer), typeof(AudioSource))]
 public class PlayerController : MonoBehaviour
 {
     /*public makes it available in unity to change from in engine and not just from script
@@ -36,27 +36,6 @@ public class PlayerController : MonoBehaviour
 
     private Transform groundCheck;
 
-    //private int _score = 0;
-    //public int score
-    //{
-    //    get => _score;
-    //    set => _score = value;
-    //}
-
-    //private int maxHP = 4;
-    //private int _hp = 0;
-    //public int hp
-    //{
-    //    get => _hp;
-    //    set
-    //    {
-    //        _hp = value;
-    //        if (_hp > maxHP)
-    //        {
-    //            _hp = maxHP;
-    //        }
-    //    }
-    //}
     // GRAPPLE VARIABLES
     public LayerMask grappleLayer; // Layer where grapple points exist
     public float grappleRange = 10f;
@@ -72,6 +51,11 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 lastCheckpoint;
 
+    //Audio Clips
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip grappleSound;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -81,6 +65,7 @@ public class PlayerController : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         line = GetComponent<LineRenderer>();
+        audioSource = GetComponent<AudioSource>();
 
         line.sortingOrder = 10;
         rb.linearVelocity = Vector3.zero;
@@ -97,6 +82,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Time.timeScale <= 0) return;
+        if (GameManager.Instance.hp <= 0) return;
         checkGrounded();
 
         if (canMove())
@@ -125,6 +112,7 @@ public class PlayerController : MonoBehaviour
         //Variable jump based on length of time button is held
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            audioSource.PlayOneShot(jumpSound);
             isJumping = true;
             jumpTimer = maxJumpTime;
             rb.gravityScale = 10;
@@ -166,6 +154,13 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("speed", Mathf.Abs(hInput));
         anim.SetBool("isFalling", rb.linearVelocity.y < -0.1f);
         anim.SetBool("isGrappling", isGrappling);
+    }
+    public void Die()
+    {
+        anim.SetTrigger("Death");
+        rb.linearVelocity = Vector2.zero;
+        GetComponent<BoxCollider2D>().enabled = false;
+        rb.gravityScale = 0;
     }
     void grapple()
     {
@@ -238,7 +233,7 @@ public class PlayerController : MonoBehaviour
         line.enabled = true;
 
         rb.gravityScale = 0;
-
+        audioSource.PlayOneShot(grappleSound);
         Vector2 startPos = frogMouth.position;
         float t = 0;
 

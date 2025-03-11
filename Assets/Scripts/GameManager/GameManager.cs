@@ -2,10 +2,17 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
+using System.Collections;
+using System.Linq;
 
 [DefaultExecutionOrder(-1)]
 public class GameManager : MonoBehaviour
 {
+    AudioSource audioSource;
+    public AudioClip playerDeath;
+
+    private MenuController menuController;
+
     private static GameManager _instance;
     public static GameManager Instance => _instance;
     public event Action<PlayerController> OnPlayerSpawned;
@@ -26,14 +33,15 @@ public class GameManager : MonoBehaviour
         set
         {
             if (value <= 0)
-            {
-                //gameOver();
+            {     
+                _playerInstance.Die();
+                StartCoroutine(Death(1.5f));
+                _hp = 0;
+                OnLifeValueChanged?.Invoke(hp);
                 return;
             }
-            //if (_hp > value) Respawn();
 
             _hp = value;
-
             if (_hp > maxHP) _hp = maxHP;
 
             OnLifeValueChanged?.Invoke(_hp);
@@ -46,6 +54,9 @@ public class GameManager : MonoBehaviour
     public PlayerController PlayerInstance => _playerInstance;
     #endregion
     private Transform currentRespawn;
+
+
+    public void SetMenuController(MenuController menuController) => this.menuController = menuController;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -59,7 +70,9 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        if (hp <= 0) hp = 5;
+        audioSource = GetComponent<AudioSource>();
+        if (hp <= 0) hp = 4;
+        //menuController = gameObject.AddComponent<MenuController>();
     }
 
     void Update()
@@ -78,14 +91,7 @@ public class GameManager : MonoBehaviour
     void gameOver()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("GameOver");
-        Debug.Log("Game Over goes here");
-        hp = 4;
-        score = 0;
-    }
-    void Respawn()
-    {
-        _playerInstance.transform.position = currentRespawn.position;
+        menuController.ShowGameOverMenu();
     }
     public void InstantiatePlayer(Transform spawnLocation)
     {
@@ -102,5 +108,12 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneName);
+    }
+    IEnumerator Death(float delay)
+    {
+        audioSource.PlayOneShot(playerDeath);
+        yield return new WaitForSeconds(delay);
+
+        gameOver();
     }
 }

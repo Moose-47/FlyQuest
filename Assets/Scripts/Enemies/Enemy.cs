@@ -3,6 +3,8 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer), typeof(Animator))]
 public class Enemy : MonoBehaviour
 {
+    AudioSource audioSource;
+    public AudioClip squish;
     protected SpriteRenderer sr;
     protected Animator anim;
     protected int health;
@@ -10,6 +12,7 @@ public class Enemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected virtual void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
 
@@ -23,8 +26,10 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             anim.SetTrigger("death");
-
-            if (transform.parent != null) Destroy(transform.parent.gameObject, 0.5f);
+            audioSource.PlayOneShot(squish);
+            GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<Rigidbody2D>().gravityScale = 0.0f;
+            if (transform.parent != null) Destroy(transform.parent.gameObject, squish.length);
             else Destroy(gameObject, 0.5f);
         }
     }

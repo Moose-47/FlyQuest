@@ -21,7 +21,7 @@ public class MenuController : MonoBehaviour
         {
             allMenus = gameObject.GetComponentsInChildren<BaseMenu>(true);
         }
-
+      
         foreach (BaseMenu menu in allMenus)
         {
             if (menu == null) continue;
@@ -33,6 +33,7 @@ public class MenuController : MonoBehaviour
         }
 
         SetActiveState(initState);
+        GameManager.Instance.SetMenuController(this);
     }
 
     public void JumpBack()
@@ -72,6 +73,11 @@ public class MenuController : MonoBehaviour
         currentState = menuDictionary[newState];
         currentState.gameObject.SetActive(true);
         currentState.EnterState();
+
+        if (newState == MenuStates.GameOver && currentState is GameOverMenu gameOverMenu)
+        {
+            gameOverMenu.StartFadeIn();
+        }
 
         if (!isJumpingBack) menuStack.Push(newState);
     }
@@ -113,5 +119,10 @@ public class MenuController : MonoBehaviour
                 TogglePauseMenu();
             }
         }
+    }
+    public void ShowGameOverMenu()
+    {
+        SetActiveState(MenuStates.GameOver);
+        //Time.timeScale = 0f;
     }
 }

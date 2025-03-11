@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Moth : MonoBehaviour, Pickup
 {
+    AudioSource audioSource;
+    public AudioClip heal;
     public float bobSpeed = 2f;  
     public float bobAmount = 0.2f;
 
@@ -11,6 +13,7 @@ public class Moth : MonoBehaviour, Pickup
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         startPos = transform.position;
     }
 
@@ -23,6 +26,9 @@ public class Moth : MonoBehaviour, Pickup
     {
         GameManager.Instance.hp++;
         Debug.Log(GameManager.Instance.hp);
-        Destroy(gameObject);
+        audioSource.PlayOneShot(heal);
+        GetComponent<BoxCollider2D>().enabled = false;
+        GetComponent<SpriteRenderer>().enabled = false;
+        Destroy(gameObject, heal.length);
     }
 }

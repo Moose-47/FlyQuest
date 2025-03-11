@@ -3,6 +3,9 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Spider : Enemy
 {
+    AudioSource audioSource;
+    public AudioClip playerHurt;
+
     Rigidbody2D rb;
     [SerializeField] private float xVel;
 
@@ -17,6 +20,7 @@ public class Spider : Enemy
     {
         base.Start();
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
         rb.sleepMode = RigidbodySleepMode2D.NeverSleep;
 
         if (xVel <= 0) xVel = 1.5f;
@@ -60,6 +64,7 @@ public class Spider : Enemy
         if (collision.gameObject.CompareTag("Player"))
         {
             GameManager.Instance.hp--;
+            audioSource.PlayOneShot(playerHurt);
             Debug.Log(GameManager.Instance.hp);
         }
     }
