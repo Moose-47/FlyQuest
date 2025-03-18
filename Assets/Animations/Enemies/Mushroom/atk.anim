@@ -26,11 +26,11 @@ AnimationClip:
       value: {fileID: 4759710517074218226, guid: 64bc96595e376b7498ee2a9d4007080a, type: 3}
     - time: 0.16666667
       value: {fileID: -2385177447425715584, guid: 64bc96595e376b7498ee2a9d4007080a, type: 3}
-    - time: 0.25
+    - time: 0.5
       value: {fileID: -1874639138, guid: 64bc96595e376b7498ee2a9d4007080a, type: 3}
-    - time: 0.33333334
+    - time: 0.5833333
       value: {fileID: -3970975701035776793, guid: 64bc96595e376b7498ee2a9d4007080a, type: 3}
-    - time: 0.41666666
+    - time: 0.6666667
       value: {fileID: 3129997671118383515, guid: 64bc96595e376b7498ee2a9d4007080a, type: 3}
     - time: 1
       value: {fileID: 4864933341867447725, guid: 64bc96595e376b7498ee2a9d4007080a, type: 3}
@@ -88,7 +88,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.21666667
+  - time: 0.48333332
     functionName: Fire
     data: 
     objectReferenceParameter: {fileID: 0}
