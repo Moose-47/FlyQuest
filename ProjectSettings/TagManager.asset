@@ -8,6 +8,8 @@ TagManager:
   - wall
   - grappleLayer
   - squish
+  - spore
+  - mush
   layers:
   - Default
   - TransparentFX

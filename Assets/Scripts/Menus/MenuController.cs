@@ -123,6 +123,5 @@ public class MenuController : MonoBehaviour
     public void ShowGameOverMenu()
     {
         SetActiveState(MenuStates.GameOver);
-        //Time.timeScale = 0f;
     }
 }

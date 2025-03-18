@@ -15,14 +15,35 @@ public class GameManager : MonoBehaviour
 
     private static GameManager _instance;
     public static GameManager Instance => _instance;
+
     public event Action<PlayerController> OnPlayerSpawned;
+
     public UnityEvent<int> OnLifeValueChanged;
+    public UnityEvent<int> OnScoreGained;
+    public UnityEvent<int> OnFlyCollected;
     #region Game Properties
     private int _score = 0;
     public int score
     {
         get => _score;
-        set => _score = value;
+        set
+        {
+            _score = value;
+            OnScoreGained?.Invoke(_score);
+        }
+    }
+    public int _fly = 0;
+    public int fly
+    {
+        get => _fly;
+        set => _fly = value;
+        
+    }
+    private int _beetles = 0;
+    public int beetles
+    {
+        get => _beetles;
+        set => _beetles = value;     
     }
 
     [SerializeField] private int maxHP = 4;

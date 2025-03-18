@@ -56,11 +56,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioClip jumpSound;
     [SerializeField] private AudioClip grappleSound;
 
+    private bool hurt = false;
+    private float hurtTimer = 0.3f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //frogMouth = transform.Find("FrogMouth");
-        //Assigning unity Rigidbody2D to var.
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
@@ -96,9 +96,7 @@ public class PlayerController : MonoBehaviour
     }
     bool canMove()
     {
-        if (isGrappling) return false;
-
-        return true;
+        return !isGrappling && !hurt;
     }
     void LRmovement()
     {
@@ -270,7 +268,19 @@ public class PlayerController : MonoBehaviour
         line.enabled = false;
         isGrappling = false;
     }
-
+    public void dmgTaken()
+    {
+        hurt = true;
+        rb.linearVelocity = Vector2.zero;
+        
+        StartCoroutine(ResetHurt());
+    }
+    IEnumerator ResetHurt()
+    {
+        yield return new WaitForSeconds(hurtTimer);
+        rb.linearVelocity = Vector2.zero;
+        hurt = false;
+    }
     public void SetCheckpoint(Vector2 newCheckpoint)
     {
         lastCheckpoint = newCheckpoint;

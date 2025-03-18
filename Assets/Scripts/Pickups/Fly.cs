@@ -23,7 +23,12 @@ public class Score : MonoBehaviour, Pickup
     }
     public void Pickup(PlayerController player)
     {
-        GameManager.Instance.score++;
+        GameManager.Instance.fly++;
+        GameManager.Instance.score += addScore;
+
+        GameManager.Instance.OnFlyCollected?.Invoke(GameManager.Instance.fly);
+        GameManager.Instance.OnScoreGained?.Invoke(GameManager.Instance.score);
+
         audioSource.PlayOneShot(flyCollect);
         GetComponent<BoxCollider2D>().enabled = false;
         GetComponent<SpriteRenderer>().enabled = false;

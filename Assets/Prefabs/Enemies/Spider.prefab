@@ -66,7 +66,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0035562515, y: -0.09010506}
+  m_Offset: {x: 0.0035562515, y: -0.11060047}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.50442314, y: 0.061016083}
+  m_Size: {x: 0.50442314, y: 0.10200691}
   m_EdgeRadius: 0
 --- !u!1 &3974531044747952573
 GameObject:
@@ -234,7 +234,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.11403847}
+  m_Offset: {x: 0, y: 0.045721054}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -244,7 +244,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5, y: 0.22807693}
+  m_Size: {x: 0.5, y: 0.09144211}
   m_EdgeRadius: 0
 --- !u!95 &8648957145916154788
 Animator:
@@ -281,7 +281,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   squish: {fileID: 8300000, guid: 7e7061e2d8b18bf488d0aa4598c4ad53, type: 3}
+  hurt: {fileID: 0}
   maxHealth: 1
+  knockbackForce: 5
   playerHurt: {fileID: 8300000, guid: a2bbf6c2aacc63043a01baef5493beec, type: 3}
   xVel: 0
   groundCheck: {fileID: 4965339203461648045}

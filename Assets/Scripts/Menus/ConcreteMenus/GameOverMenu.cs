@@ -3,8 +3,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
 public class GameOverMenu : BaseMenu
-{
-    
+{    
     public Button tryAgainBtn;
     public Button mainMenuBtn;
     public Button quitBtn;
@@ -40,8 +39,7 @@ public class GameOverMenu : BaseMenu
             timeElapsed += Time.deltaTime;
             canvasGroup.alpha = Mathf.Clamp01(timeElapsed / fadeInDuration);
             yield return null;
-        }
-       
+        } 
         canvasGroup.alpha = 1;
         GameManager.Instance.hp = 4;
         GameManager.Instance.score = 0;

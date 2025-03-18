@@ -15,7 +15,7 @@ public class Spider : Enemy
     [SerializeField] private float groundCheckOffsetX = 0.1f;
     [SerializeField] private float wallCheckDistance = 0.3f;
     [SerializeField] private Transform wallCheck;
-    
+
     protected override void Start()
     {
         base.Start();
@@ -66,6 +66,15 @@ public class Spider : Enemy
             GameManager.Instance.hp--;
             audioSource.PlayOneShot(playerHurt);
             Debug.Log(GameManager.Instance.hp);
+
+            Rigidbody2D playerRB = GameManager.Instance.PlayerInstance.GetComponent<Rigidbody2D>();
+            if (playerRB != null && GameManager.Instance.hp > 0)
+            {
+                PlayerController player = collision.gameObject.GetComponent<PlayerController>();
+                player.dmgTaken();
+                Vector2 knockbackDirection = (GameManager.Instance.PlayerInstance.transform.position - transform.position).normalized;
+                playerRB.linearVelocity = knockbackDirection * knockbackForce;
+            }
         }
     }
 }
