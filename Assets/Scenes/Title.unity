@@ -4657,15 +4657,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Player Character Assets               - Eduardo Scarpato (eduardscarpato.itch.io)                                     
-    Health Bar Assets                         - bdragon1727.itch.io                                                           
-    Mushroom Enemy Assets             - o_lobster (o-lobster.itch.io)                                                               
-    Mushroom Attack VFX Assets      - Davit Masia (kronbits.itch.io)                                                      
-    Tilemap and background Assets  - Anokolisa (anokolisa.itch.io)                                                         
-    Moth Collectable Assets               - pop-shop-packs.itch.io                                                                           
-    Beetle Collectable Assets             - deepdivegamestudio.itch.io                                                             
-    Fly Collectable Assets                  - elthen.itch.io                                                                                     
-    Title Screen Art                             - Dylan Dixon
+  m_text: Player Character Assets                   - eduardscarpato.itch.io                                                          
+    Health Bar Assets                            - bdragon1727.itch.io                                                           
+    Mushroom Enemy Assets                - o-lobster.itch.io                                                                 
+    Mushroom Attack VFX Assets         - kronbits.itch.io                                                                    
+    Tilemap and background Assets     - anokolisa.itch.io                                                                       
+    Moth Collectable Assets                  - pop-shop-packs.itch.io                                                                           
+    Beetle Collectable Assets                - deepdivegamestudio.itch.io                                                             
+    Fly Collectable Assets                     - elthen.itch.io                                                                                     
+    Title Screen Art                                - Dylan Dixon
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
