@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a977db45a8e3aff44930b8c169d48d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heal: {fileID: 8300000, guid: 5f8349c41e7f9d8468cd74a765f8d178, type: 3}
+  heal: {fileID: 8300000, guid: 45d678a5010704941a79c971e07edfd6, type: 3}
   bobSpeed: 2
   bobAmount: 0.2
   addHP: 1

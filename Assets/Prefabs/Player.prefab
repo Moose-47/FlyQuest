@@ -248,7 +248,7 @@ MonoBehaviour:
   numRays: 30
   grappleAngle: 120
   frogMouth: {fileID: 562364972629043681}
-  jumpSound: {fileID: 8300000, guid: ab7dbf60accb8a64cbd122b1dc82cf6c, type: 3}
+  jumpSound: {fileID: 8300000, guid: 4d7d409d00ccd3f4fad2e37f09933a5c, type: 3}
   grappleSound: {fileID: 8300000, guid: b971be74d93e97b419b88434903ec83a, type: 3}
 --- !u!120 &7512345780248260288
 LineRenderer:

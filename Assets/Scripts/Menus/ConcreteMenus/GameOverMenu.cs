@@ -43,5 +43,7 @@ public class GameOverMenu : BaseMenu
         canvasGroup.alpha = 1;
         GameManager.Instance.hp = 4;
         GameManager.Instance.score = 0;
+        GameManager.Instance.fly = 0;
+        GameManager.Instance.beetles = 0;
     }
 }
