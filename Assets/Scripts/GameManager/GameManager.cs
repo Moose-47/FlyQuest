@@ -98,16 +98,16 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            string sceneName = (SceneManager.GetActiveScene().name.Contains("Level")) ? "Title" : "Level";
-            SceneManager.LoadScene(sceneName);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        { score++; Debug.Log(_score); }
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    string sceneName = (SceneManager.GetActiveScene().name.Contains("Level")) ? "Title" : "Level";
+        //    SceneManager.LoadScene(sceneName);
+        //}
+        //if (Input.GetKeyDown(KeyCode.Alpha1))
+        //{ score++; Debug.Log(_score); }
 
-        if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name == "GameOver")
-            SceneManager.LoadScene("Title");
+        //if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name == "GameOver")
+        //    SceneManager.LoadScene("Title");
     }
     void gameOver()
     {
