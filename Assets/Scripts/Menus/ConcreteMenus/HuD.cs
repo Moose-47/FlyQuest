@@ -24,7 +24,7 @@ public class HuD : MonoBehaviour
         if (healthSprites != null && healthSprites.Length == 5)
         {
            int index = Mathf.Clamp(currentHP, 0, 4);
-            healthBarImage.sprite = healthSprites[index];
+           healthBarImage.sprite = healthSprites[index];
         }
     }
     private void updateScore(int score)
